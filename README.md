@@ -30,7 +30,26 @@ x=[int(i) for i in input().split()]
 y=[int(i) for i in input().split()]
 N=len(x)
 ```
+```python
+import numpy as np
+import math
+import matplotlib.pyplot as plt 
+x=[int(i) for i in input().split()]
+y=[int(i) for i in input().split()]
+N=len(x)
+```
 
-# Result
 
 # Output 
+
+## input x and y array
+![image](https://github.com/EASWAR17/Correlation_Regression/assets/94154683/593610b2-870a-44e0-9b14-f837ef72b8c4)
+
+correlation coefficient
+![image](https://github.com/EASWAR17/Correlation_Regression/assets/94154683/32b53d9b-87d8-4656-9244-ff6a113c118e)
+
+regression lines and graph
+![image](https://github.com/EASWAR17/Correlation_Regression/assets/94154683/fd321895-dede-4411-a559-13e3e46bf553)
+
+# Result
+The Correlation and regression for data analysis of objects from feeder using probability distribution are calculated
