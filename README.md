@@ -45,7 +45,21 @@ for i in range(0,N):
 r=(N*sxy-sx*sy)/(math.sqrt(N*sx2-sx**2)*math.sqrt(N*sy2-sy**2))
 print("The correlation cofficient of %0.3f"%r)
 ```
-
+```python
+byx=(N*sxy-sx*sy)/(N*sx2-sx**2)
+xmean=sx/N
+ymean=sy/N
+print("The Regression line Y on X is ::: %0.3f + %0.3f (x-%0.3f)"%(ymean,byx,xmean))
+plt.scatter(x,y)
+def reg(x):
+    return ymean+byx*(x-xmean)
+x=np.linspace(0,80,51)
+y1=reg(x)
+plt.plot(x,y1,'r')
+plt.xlabel('x-data')
+plt.ylabel('y-data')
+plt.legend(['Regression Line','Data points'])
+```
 
 # Output 
 
