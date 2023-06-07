@@ -31,12 +31,19 @@ y=[int(i) for i in input().split()]
 N=len(x)
 ```
 ```python
-import numpy as np
-import math
-import matplotlib.pyplot as plt 
-x=[int(i) for i in input().split()]
-y=[int(i) for i in input().split()]
-N=len(x)
+sx=0
+sy=0
+sxy=0
+sx2=0
+sy2=0
+for i in range(0,N):
+    sx=sx+x[i]
+    sy=sy+y[i]
+    sxy=sxy+x[i]*y[i]
+    sx2=sx2+x[i]**2
+    sy2=sy2+y[i]**2
+r=(N*sxy-sx*sy)/(math.sqrt(N*sx2-sx**2)*math.sqrt(N*sy2-sy**2))
+print("The correlation cofficient of %0.3f"%r)
 ```
 
 
@@ -45,10 +52,10 @@ N=len(x)
 ## input x and y array
 ![image](https://github.com/EASWAR17/Correlation_Regression/assets/94154683/593610b2-870a-44e0-9b14-f837ef72b8c4)
 
-correlation coefficient
+## correlation coefficient
 ![image](https://github.com/EASWAR17/Correlation_Regression/assets/94154683/32b53d9b-87d8-4656-9244-ff6a113c118e)
 
-regression lines and graph
+## regression lines and graph
 ![image](https://github.com/EASWAR17/Correlation_Regression/assets/94154683/fd321895-dede-4411-a559-13e3e46bf553)
 
 # Result
